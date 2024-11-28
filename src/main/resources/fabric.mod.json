@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "landsofruneterra",
+	"version": "${version}",
+	"name": "Lands of Runeterra",
+	"description": "This mod aims to add various items from the world of Runeterra by Riot Games.",
+	"authors": [
+		"SimpleMelancholy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/BrienMC/lands-of-runeterra-1.21.1"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/landsofruneterra/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.brien.landsofruneterra.LandsOfRuneterra"
+		],
+		"fabric-datagen": [
+			"net.brien.landsofruneterra.LandsOfRuneterraDataGenerator"
+		],
+		"client": [
+			"net.brien.landsofruneterra.LandsOfRuneterraClient"
+		]
+	},
+	"mixins": [
+		"landsofruneterra.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
