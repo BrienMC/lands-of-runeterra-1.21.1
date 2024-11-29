@@ -1,5 +1,7 @@
 package net.brien.landsofruneterra;
 
+import net.brien.landsofruneterra.block.ModBlocks;
+import net.brien.landsofruneterra.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -15,6 +17,7 @@ public class LandsOfRuneterra implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
