@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "X": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "#": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " I ",
+    "GXG",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "landsofruneterra:unpowered_infinity_edge"
+  }
+}

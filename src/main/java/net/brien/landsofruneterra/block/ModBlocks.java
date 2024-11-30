@@ -14,26 +14,36 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block HEXTECH_ORE = registerBlock("hextech_ore", new Block(AbstractBlock.Settings.create().strength(3f).requiresTool()));
-    public static final Block HEXTECH_DEEPSLATE_ORE = registerBlock("hextech_deepslate_ore", new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+    // Handles all Lands of Runeterra blocks.
+
+    // Keep this for placeholder to copy and paste
+    // public static final Block HEXITE_ORE = registerBlock("hexite_ore", new Block(AbstractBlock.Settings.create().strength(3f).requiresTool()));
+
+    public static final Block HEXITE_ORE = registerBlock("hexite_ore", new Block(AbstractBlock.Settings.create().strength(3f).requiresTool()));
+    public static final Block HEXITE_DEEPSLATE_ORE = registerBlock("hexite_deepslate_ore", new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
 
+    // Helper method for setting up new blocks in the world
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(LandsOfRuneterra.MOD_ID, name), block);
     }
 
+    // Helper method for setting up the inventory item version of the block
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(LandsOfRuneterra.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
 
+
+    // Prints to logger that this file is being read
     public static void registerModBlocks() {
         LandsOfRuneterra.LOGGER.info("Registering Mod Blocks for " + LandsOfRuneterra.MOD_ID);
 
+        // Adds modded blocks to vanilla creative mode tabs
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
-            entries.add(ModBlocks.HEXTECH_ORE);
-            entries.add(ModBlocks.HEXTECH_DEEPSLATE_ORE);
+            entries.add(ModBlocks.HEXITE_ORE);
+            entries.add(ModBlocks.HEXITE_DEEPSLATE_ORE);
         });
     }
 }

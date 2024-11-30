@@ -2,8 +2,9 @@
   "item.landsofruneterra.infinity_edge": "Infinity Edge",
   "item.landsofruneterra.unpowered_infinity_edge": "Unawakened Edge",
 
-  "block.landsofruneterra.hextech_ore": "Hextech Ore",
-  "block.landsofruneterra.hextech_deepslate_ore": "Deepslate Hextech Ore",
+  "block.landsofruneterra.hexite_ore": "Hexite Ore",
+  "block.landsofruneterra.hexite_deepslate_ore": "Deepslate Hexite Ore",
+  "item.landsofruneterra.unstable_hexite": "Unstable Hexite",
 
   "itemgroup.landsofruneterra.lands_of_runeterra_blocks": "Lands of Runeterra Blocks",
   "itemgroup.landsofruneterra.lands_of_runeterra_items": "Lands of Runeterra Items"

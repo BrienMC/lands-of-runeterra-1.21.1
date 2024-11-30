@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "landsofruneterra:block/hextech_ore"
+    "all": "landsofruneterra:block/hexite_deepslate_ore"
   }
 }
